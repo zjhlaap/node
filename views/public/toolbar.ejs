@@ -1,0 +1,28 @@
+<div class="card-header d-flex align-items-center">
+    <div class="row">
+        <div class="col-8">
+            <div class="form-group">
+                <div class="input-group">
+                    <input id="search_input" type="text" class="form-control ">
+                    <div class="input-group-append">
+                        <button id="search_btn" type="button" class="btn btn-primary ">搜索</button>
+                        <button id="search_all_btn" type="button" class="btn btn-success ">显示全部</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+        <a  class="btn btn-info" href="/admin/<%= api_name %>/add?columnName=<%= columnName %>&q=<%= q %>&start=<%=start%>&rule=<%= rule %>&count=<%= count %>&title=" role="button">添加</a></div>
+        <div class="col-2">
+            <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    排序 
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="/admin/<%= api_name %>/<%= columnName %>?colunmName=<%= columnName %>&start=<%=start%>&q=<%= q %>&rule=title&count=<%= count %>">标题</a>
+                    <a class="dropdown-item" href="/admin/<%= api_name %>/<%= columnName %>?colunmName=<%= columnName %>&start=<%=start%>&q=<%= q %>&rule=time&count=<%= count %>">发布时间</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

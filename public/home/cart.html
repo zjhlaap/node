@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>蜂狂购</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/home/css/public.css">
+    <link rel="stylesheet" href="/home/css/fkg.css">
+    <link rel="stylesheet" href="/home/css/cart.css">
+</head>
+<body>
+<div class="top">
+    <div id="header-top">
+        <div class="layout">
+            <div class="welcome">
+                <span>你好，欢迎来蜂狂购商城</span>
+                <a href="./login.html" class="login">请登录</a>
+                <a href="./register.html" class="register">免费注册</a>
+            </div>
+            <div class="self-info">
+                <a href="javascript:;" class="order">我的订单</a>
+                <span>|</span>
+                <a href="javascript:;" class="balabce">我的余额</a>
+                <span>|</span>
+                <a href="javascript:;" class="collection">我的收藏</a>
+                <span>|</span>
+                <a href="./cart.html" class="shopcar">购物车</a>
+                <span>|</span>
+                <a href="javascript:;" class="buy-center">买家中心</a>
+                <span>|</span>
+                <a href="javascript:;" class="download">下载APP
+                    <div class="sj"></div>
+                    <div class="code valign">
+                        <p>扫码下载蜂狂购</p>
+                        <img src="./images/20190130163425.png" alt="">
+                    </div>
+                </a>
+                <span>|</span>
+                <a href="javascript:;" class="business-center">商家中心</a>
+            </div>
+        </div>
+    </div>
+    <div id="header">
+        <div class="layout">
+            <div class="header-nav-line">
+                <a href="javascript:;" class="logo">
+                    <img src="/home/images/logo.png" alt="">
+                </a>
+                <form action="">
+                    <input type="text" class="search-all" placeholder="">
+                    <input type="button" class="search-product" value="搜索">
+
+                </form>
+
+            </div>
+            <div class="header-desc-nav">
+                <dl class="detail-nav">
+                    <dt>所有产品分类 <i></i></dt>
+                    <dd data-id="1" >
+                        <h3><span>地方特产</span><em></em></h3>
+                        <p><a href="javascript:;">菌菇干货</a><a href="javascript:;">腊味咸货</a><a href="javascript:;">天然干菜</a></p>
+                    </dd>
+                    <dd>
+                        <h3><span>休闲食品</span><em></em></h3>
+                        <p><a href="javascript:;">坚果炒货</a><a href="javascript:;">果脯蜜饯</a><a href="javascript:;">糖果巧克力</a></p>
+                    </dd>
+                    <dd>
+                        <h3><span>乳品冲饮</span><em></em></h3>
+                        <p><a href="javascript:;">鲜奶制品</a><a href="javascript:;">饮料</a><a href="javascript:;">冲饮</a><a href="javascript:;">咖啡/果汁</a></p>
+                    </dd>
+                    <dd>
+                        <h3><span>粮油调味</span><em></em></h3>
+                        <p><a href="javascript:;">米面杂粮</a><a href="javascript:;">冷冻食品</a><a href="javascript:;">方便速食</a></p>
+                    </dd>
+                    <dd>
+                        <h3><span>生鲜果蔬</span><em></em></h3>
+                        <p><a href="javascript:;">水果</a><a href="javascript:;">蔬菜</a><a href="javascript:;">水产</a><a href="javascript:;">肉禽</a><a href="javascript:;">豆制品</a></p>
+                    </dd>
+                    <dd>
+                        <h3><span>名茶名酒</span><em></em></h3>
+                        <p><a href="javascript:;">茶话人生</a><a href="javascript:;">酒逢知己</a></p>
+                    </dd>
+                    <dd>
+                        <h3><span>滋补营养</span><em></em></h3>
+                        <p><a href="javascript:;">食药同源</a><a href="javascript:;">蜂蜜/蜂雷产品</a><a href="javascript:;">现代营养品</a></p>
+                    </dd>
+                </dl>
+                <a href="javascript:;">首页</a><span>|</span><a href="javascript:;">特色山货</a><span>|</span>
+                <a href="javascript:;">芝麻开门</a><span>|</span>
+                <a href="javascript:;">三味芝麻</a><span>|</span>
+                <a href="javascript:;">美食中国</a><span>|</span>
+                <a href="javascript:;">商家店铺</a>
+                <ul class="second-menu"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="layout">
+        <div class="crumbs">
+           <span>1.我的购物车</span><i>-></i>
+            <span>2.确认订单信息</span><i>-></i>
+            <span>3.支付提交</span><i>-></i>
+            <span>4.订单完成</span>
+        </div>
+        <div class="cart-header">
+            <span class="product">商品</span>
+            <span class="price fr">单价(元)</span>
+            <span class="count fr">数量</span>
+            <span class="add fr">小计</span>
+            <span class="option fr">操作</span>
+        </div>
+        <dl>
+            <dd>
+                <p class="business-name">
+                    <input type="checkbox" checked class="business-checked"><span>商家名字</span>
+                </p>
+                <div>
+
+                </div>
+
+            </dd>
+            <dt>
+                <p class="fl"><input type="checkbox" checked class="all-checkbox fl"><span>全选</span></p>
+                <!--<span class="del-all fl">删除选择的产品</span>-->
+                <span class="num fl">已选择 <i>0</i> 件商品</span>
+                <span class="total-money fl">
+                    总价（奴含运费）： <em>￥</em><em class="money">0.00</em>
+                </span>
+                <input type="button" value="去支付" class="pay fr">
+            </dt>
+        </dl>
+
+    </div>
+</div>
+<div class="footer"></div>
+<script src="/home/libs/requirejs.js" data-main="/home/js/cart-main"></script>
+<script src="/home/js/jquery.js"></script>
+<script src="/home/js/public.js"></script>
+<script>
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+ <nav aria-label="...">
+        <ul class="pagination small">
+            <li class="page-item <%= start > 1 ? '' : 'disabled'%>">
+                <a class="page-link" href="/admin/<%= api_name %>/<%= columnName %>?start=<%=start-1%>&colunmName=<%= columnName %>&q=<%= q %>&rule=<%= rule %>&count=<%= count %>">上一页</a>
+            </li>
+            <% for(var i = 1;i <= pageCount;++i){%>
+                <li class="page-item <%= start==i ? 'active' :''%>">
+                    <a class="page-link" href="/admin/<%= api_name %>/<%= columnName %>?colunmName=<%= columnName %>&start=<%=i%>&q=<%= q %>&rule=<%= rule %>&count=<%= count %>"><%= i %></a>
+                </li>
+            <%}%>
+            <li class="page-item <%= start < pageCount ? '' : 'disabled'%>">
+                <a class="page-link" href="/admin/<%= api_name %>/<%= columnName %>?colunmName=<%= columnName %>&start=<%=start-0+1%>&q=<%= q %>&rule=<%= rule %>&count=<%= count %>">下一页</a>
+            </li>
+
+        </ul>
+    </nav>

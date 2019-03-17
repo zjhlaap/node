@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>node 管理后台</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="/admin/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="/admin/vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Fontastic Custom user font-->
+    <link rel="stylesheet" href="/admin/css/fontastic.css">
+    <!-- Google fonts - Poppins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="/admin/css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="/admin/css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="/admin/vendor/jquery/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-lite.css" rel="stylesheet">
+    <script src="/admin/js/summernote-lite.js"></script>
+    <script src="/admin/js/summernote-zh-CN.js"></script>
+    <link href="/admin/fileinput/css/bootstrap-fileinput.css" rel="stylesheet">
+    <script src="/admin/fileinput/js/bootstrap-fileinput.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <!-- Main Navbar-->
+      <% include ../../public/header.ejs %>
+      <div class="page-content d-flex align-items-stretch"> 
+        <!-- Side Navbar -->
+        <% include ../../public/slide.ejs %>
+        <div class="content-inner">
+          <!-- Page Header-->
+          <% include ../../public/crumb.ejs %>
+          <section class="tables">   
+            <div class="container-fluid">
+              <div class="row">
+                  <div class="col-lg-12">
+                    <div class="card">
+                      <div class="card-header d-flex align-items-center">
+                        <h3 class="h4">添加</h3>
+                      </div>
+                      <div class="card-body">
+                          <div class="form-group row">
+                            <label class="col-sm-3 form-control-label">分类名称</label>
+                            <div class="col-sm-9">
+                              <input id="title" type="text" placeholder="字数限定提示" class="form-control form-control-success" value="<%= result.name %>"><small class="form-text">文章的标题会显示到页面的列表.</small>
+                            </div>
+                          </div>
+                          <div class="form-group row">       
+                            <div class="col-sm-10 offset-sm-3">
+                              <input type="button" value="提交" class="btn btn-success" id="commit">
+                              <script>
+                                 $("#commit").on("click",function(){
+                                    if($("#title").val()==''){
+                                      return false;
+                                      // window.location.href="/admin/error?msg=分类名称不能为空&url=/admin/product/column/add"
+                                    }
+                                     $.ajax({
+                                         url: '/admin/product/column/update_post',
+                                         type: 'POST',
+                                         data:{name:$("#title").val(),id:'<%= id %>'},
+                                         // contentType: false,//不设置编码类型,在进行文件流与普通字符串混合上传的时候，需要设置为false
+                                         // processData: false,//不进行数据处理
+                                         success: function (result) {
+                                             if(result.url !== undefined){
+                                                 window.location.href=result.url;//前端跳转
+                                             }
+                                         },
+                                         error: function (data) {
+                                             console.log(data.status);
+                                         }
+                                     });
+                                 })
+                              </script>
+                            </div>
+                          </div>
+                        <!-- </form> -->
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+          <!-- Page Footer-->
+          <% include ../../public/footer.ejs %>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript files-->
+    <script src="/admin/vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/admin/vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="/admin/vendor/chart.js/Chart.min.js"></script>
+    <script src="/admin/vendor/jquery-validation/jquery.validate.min.js"></script>
+    <!-- Main File-->
+    <script src="/admin/js/front.js"></script>
+  </body>
+</html>

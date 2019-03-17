@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>蜂狂购</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/home/css/public.css">
+    <link rel="stylesheet" href="/home/css/fkg.css">
+    <link rel="stylesheet" href="/home/css/index.css">
+</head>
+<body>
+<div class="top">
+    <div id="header-top">
+        <div class="layout">
+            <div class="welcome">
+                <span>你好，欢迎来蜂狂购商城</span>
+                <a href="login.html" class="login">请登录</a>
+                <a href="register.html" class="register">免费注册</a>
+            </div>
+            <div class="self-info">
+                <a href="javascript:;" class="order">我的订单</a>
+                <span>|</span>
+                <a href="javascript:;" class="balabce">我的余额</a>
+                <span>|</span>
+                <a href="javascript:;" class="collection">我的收藏</a>
+                <span>|</span>
+                <a href="cart.html" class="shopcar">购物车</a>
+                <span>|</span>
+                <a href="javascript:;" class="buy-center">买家中心</a>
+                <span>|</span>
+                <a href="javascript:;" class="download">下载APP
+                    <div class="sj"></div>
+                    <div class="code valign">
+                        <p>扫码下载蜂狂购</p>
+                        <img src="/home/images/20190130163425.png" alt="">
+                    </div>
+                </a>
+                <span>|</span>
+                <a href="javascript:;" class="business-center">商家中心</a>
+            </div>
+        </div>
+    </div>
+    <div id="header">
+        <div class="layout">
+            <div class="header-nav-line">
+                <a href="javascript:;" class="logo">
+                    <img src="/home/images/logo.png" alt="">
+                </a>
+                <form action="">
+                    <input type="text" class="search-all" placeholder="搜搜你想搜索的特产或店铺">
+                    <input type="button" class="search-product" value="搜索商品">
+                    <input type="button" class="search-store" value="搜索店铺">
+                    <p>
+                        <a href="javascript:;">零食</a><span>|</span>
+                        <a href="javascript:;">特产</a><span>|</span>
+                        <a href="javascript:;">米</a><span>|</span>
+                        <a href="javascript:;">油</a><span>|</span>
+                        <a href="javascript:;">水果</a><span>|</span>
+                        <a href="javascript:;">腊肉</a>
+                    </p>
+                </form>
+                <div class="shoppingCart">
+                    <a href="./cart.html">我的购物车</a>
+                </div>
+            </div>
+            <div class="header-desc-nav">
+                <dl class="detail-nav">
+                    <dt>所有产品分类 <i></i></dt>
+                    <dd data-id="1" >
+                        <h3><span>地方特产</span><em></em></h3>
+                        <p><a href="javascript:;">菌菇干货</a><a href="javascript:;">腊味咸货</a><a href="javascript:;">天然干菜</a></p>
+                    </dd>
+                    <dd>
+                        <h3><span>休闲食品</span><em></em></h3>
+                        <p><a href="javascript:;">坚果炒货</a><a href="javascript:;">果脯蜜饯</a><a href="javascript:;">糖果巧克力</a></p>
+                    </dd>
+                    <dd>
+                        <h3><span>乳品冲饮</span><em></em></h3>
+                        <p><a href="javascript:;">鲜奶制品</a><a href="javascript:;">饮料</a><a href="javascript:;">冲饮</a><a href="javascript:;">咖啡/果汁</a></p>
+                    </dd>
+                    <dd>
+                        <h3><span>粮油调味</span><em></em></h3>
+                        <p><a href="javascript:;">米面杂粮</a><a href="javascript:;">冷冻食品</a><a href="javascript:;">方便速食</a></p>
+                    </dd>
+                    <dd>
+                        <h3><span>生鲜果蔬</span><em></em></h3>
+                        <p><a href="javascript:;">水果</a><a href="javascript:;">蔬菜</a><a href="javascript:;">水产</a><a href="javascript:;">肉禽</a><a href="javascript:;">豆制品</a></p>
+                    </dd>
+                    <dd>
+                        <h3><span>名茶名酒</span><em></em></h3>
+                        <p><a href="javascript:;">茶话人生</a><a href="javascript:;">酒逢知己</a></p>
+                    </dd>
+                    <dd>
+                        <h3><span>滋补营养</span><em></em></h3>
+                        <p><a href="javascript:;">食药同源</a><a href="javascript:;">蜂蜜/蜂雷产品</a><a href="javascript:;">现代营养品</a></p>
+                    </dd>
+                </dl>
+                <a href="javascript:;">首页</a><span>|</span><a href="javascript:;">特色山货</a><span>|</span>
+                <a href="javascript:;">芝麻开门</a><span>|</span>
+                <a href="javascript:;">三味芝麻</a><span>|</span>
+                <a href="javascript:;">美食中国</a><span>|</span>
+                <a href="javascript:;">商家店铺</a>
+                <ul class="second-menu"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+   <div id="banner">
+       <div class="layout">
+           <div class="banner-left fl">
+               <div class="container">
+                  <div id="banners-container">
+                   <!-- <img src="/home/images/banner1.jpeg" alt="">
+                   <img src="/home/images/banner2.jpeg" alt="">
+                   <img src="/home/images/banner3.jpeg" alt="">
+                   <img src="/home/images/banner4.jpeg" alt="">
+                   <img s rc="/home/images/banner5.jpeg" alt="">-->
+                  </div>
+                   <div class="banner-point"></div>
+                   <div class="direction">
+                       <input id="left" type="button" value="<"/>
+                       <input id="right" value=">" type="button"/>
+                   </div>
+               </div>
+               <div class="banner-bottom">
+                   <a href="javascript:;" class="fl">
+                       <img src="/home/images/bottom1.jpeg" alt="">
+                   </a>
+                   <a href="javascript:;" class="fl">
+                       <img src="/home/images/bottom2.jpeg" alt="">
+                   </a>
+               </div>
+           </div>
+           <div class="banner-right fr">
+                <div class="banner-login">
+                    <div class="face valign"><img src="/home/images/default_face.png" alt=""></div>
+                    <p>Hi!你好</p>
+                    <div class="login-button">
+                        <a href="./login.html" class="login-button"><input type="button" value="登陆"></a>
+                        <a href="./register.html" class="register-button"><input type="button" value="注册"></a>
+                    </div>
+                </div>
+               <div class="news">
+                   <p class="news-title"><span>蜂狂购快报</span><a href="javascript:;" class="fr">更多</a></p>
+                   <ul>
+                       <li><a href="javascript:;">安龙县_安龙县十大特产排名?</a></li>
+                       <li><a href="javascript:;">池州市_池州市特产排行</a></li>
+                       <li><a href="javascript:;">科尔沁右翼前旗_科尔沁右翼前旗特产小吃</a></li>
+                   </ul>
+               </div>
+               <div class="entry">
+                   <p>快捷入口</p>
+                   <ul>
+                       <li><a href="javascript:;"><p>我的浏览</p></a></li>
+                       <li><a href="ms.html"><p style="color:#f00;">秒杀</p></a></li>
+                       <li><a href="javascript:;"><p>我的订单</p></a></li>
+                       <li><a href="javascript:;"><p>账号安全</p></a></li>
+                       <li><a href="javascript:;"><p>售后服务</p></a></li>
+                       <li><a href="javascript:;"><p>商家入驻</p></a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div id="content">
+       <div class="layout">
+           <div class="hot-product">
+               <div class="title">
+                   <h3 class="fl">热销产品</h3>
+                   <span class="fr">更多&gt;</span>
+               </div>
+               <ul>
+                   <li>
+                       <div class="pic valign"><img src="/home/images/hot1.jpg" alt=""></div>
+                       <p class="desc">芽儿 火山铁皮石斛 特技 10g*1罐</p>
+                       <p class="price-buy"><span>￥89.90</span><s>￥198.00</s> <a href="javascript:;">立即抢购</a></p>
+                   </li>
+                   <li>
+                       <div class="pic valign"><img src="/home/images/hot2.jpg" alt=""></div>
+                       <p class="desc">芽儿 火山铁皮石斛 特技 10g*1罐</p>
+                       <p class="price-buy"><span>￥89.90</span><s>￥198.00</s> <a href="javascript:;">立即抢购</a></p>
+                   </li>
+                   <li>
+                       <div class="pic valign"><img src="/home/images/hot3.jpg" alt=""></div>
+                       <p class="desc">芽儿 火山铁皮石斛 特技 10g*1罐</p>
+                       <p class="price-buy"><span>￥89.90</span><s>￥198.00</s> <a href="javascript:;">立即抢购</a></p>
+                   </li>
+                   <li>
+                       <div class="pic valign"><img src="/home/images/hot4.jpg" alt=""></div>
+                       <p class="desc">芽儿 火山铁皮石斛 特技 10g*1罐</p>
+                       <p class="price-buy"><span>￥89.90</span><s>￥198.00</s> <a href="javascript:;">立即抢购</a></p>
+                   </li>
+                   <li>
+                       <div class="pic valign"><img src="/home/images/hot5.jpg" alt=""></div>
+                       <p class="desc">芽儿 火山铁皮石斛 特技 10g*1罐</p>
+                       <p class="price-buy"><span>￥89.90</span><s>￥198.00</s> <a href="javascript:;">立即抢购</a></p>
+                   </li>
+               </ul>
+           </div>
+           <div class="local">
+               <div class="title">
+                   <h3 class="fl">热销产品</h3>
+                   <i>精选地方特色美食</i>
+                   <span class="fr">更多&gt;</span>
+               </div>
+               <div class="local-food">
+                   <div class="local-pic"><a href="javascript:;"><img src="/home/images/ln.jpg" alt=""></a></div>
+                   <dd class="valign local-food-pic"><a href="javascript:;"><img src="/home/images/ms1.jpg" alt=""></a></dd>
+                   <dd class="valign local-food-pic"><a href="javascript:;"><img src="/home/images/ms2.jpg" alt=""></a></dd>
+               </div>
+               <div class="local-food">
+                   <div class="local-pic"><a href="javascript:;"><img src="/home/images/ln.jpg" alt=""></a></div>
+                   <dd class="valign local-food-pic"><a href="javascript:;"><img src="/home/images/ms1.jpg" alt=""></a></dd>
+                   <dd class="valign local-food-pic"><a href="javascript:;"><img src="/home/images/ms2.jpg" alt=""></a></dd>
+               </div>
+               <div class="local-food">
+                   <div class="local-pic"><a href="javascript:;"><img src="/home/images/ln.jpg" alt=""></a></div>
+                   <dd class="valign local-food-pic"><a href="javascript:;"><img src="/home/images/ms1.jpg" alt=""></a></dd>
+                   <dd class="valign local-food-pic"><a href="javascript:;"><img src="/home/images/ms2.jpg" alt=""></a></dd>
+               </div>
+               <div class="local-food">
+                   <div class="local-pic"><a href="javascript:;"><img src="/home/images/ln.jpg" alt=""></a></div>
+                   <dd class="valign local-food-pic"><a href="javascript:;"><img src="/home/images/ms1.jpg" alt=""></a></dd>
+                   <dd class="valign local-food-pic"><a href="javascript:;"><img src="/home/images/ms2.jpg" alt=""></a></dd>
+               </div>
+               <div class="local-food">
+                   <div class="local-pic"><a href="javascript:;"><img src="/home/images/ln.jpg" alt=""></a></div>
+                   <dd class="valign local-food-pic"><a href="javascript:;"><img src="/home/images/ms1.jpg" alt=""></a></dd>
+                   <dd class="valign local-food-pic"><a href="javascript:;"><img src="/home/images/ms2.jpg" alt=""></a></dd>
+               </div>
+               <div class="local-food">
+                   <div class="local-pic"><a href="javascript:;"><img src="/home/images/ln.jpg" alt=""></a></div>
+                   <dd class="valign local-food-pic"><a href="javascript:;"><img src="/home/images/ms1.jpg" alt=""></a></dd>
+                   <dd class="valign local-food-pic"><a href="javascript:;"><img src="/home/images/ms2.jpg" alt=""></a></dd>
+               </div>
+           </div>
+           <div class="specialty">
+               <div class="title">
+                   <h3 class="fl">地方特产(只有这里的购物可以点)</h3>
+                   <span class="fr">更多&gt;</span>
+               </div>
+               <div class="desc-left fl">
+                   <h3>地方特产</h3>
+                   <div class="desc-banner">
+                       <div class="bg"></div>
+                       <div class="small-banner">
+                           <a href="javascript:;">
+                               <p>逯源野生元蘑 野生</p>
+                               <img src="/home/images/specialty1.jpg" alt="">
+                           </a>
+                           <a href="javascript:;">
+                               <p> 野生干货东北特产 250g</p>
+                               <img src="/home/images/specialty2.jpg" alt="">
+                           </a>
+                           <a href="javascript:;">
+                               <p>元蘑菇东北山珍特产</p>
+                               <img src="/home/images/specialty3.jpg" alt="">
+                           </a>
+                       </div>
+                       <div class="subscript">
+                           <a href="javascript:;">&lt;</a>
+                           <span><em>3</em>/<i>3</i></span>
+                           <a href="javascript:;">&gt;</a>
+                       </div>
+                       <div class="dire">
+                            <input type="button" class="specialty-left" value="<">
+                            <input type="button" class="specialty-right" value=">">
+                        </div>
+                   </div>
+                   <div class="product-classify">
+                       <a href="javascript:;">清香型</a>
+                       <a href="javascript:;">白百合</a>
+                       <a href="javascript:;">香菇</a>
+                       <a href="javascript:;">木耳</a>
+                       <a href="javascript:;">腊肉</a>
+                       <a href="javascript:;">笋干</a>
+                   </div>
+               </div>
+               <div class="desc-right fl">
+                   <div class="title-list">
+                        <a href="javascript:;" class="active" data-id="5c8b71e84a896b20f8d46802">特产推荐</a>
+                       <a href="javascript:;" data-id="5c8b71f34a896b20f8d46803">地方特产</a>
+                       <a href="javascript:;" data-id="5c8b72034a896b20f8d46804">名品茶叶</a>
+                       <a href="javascript:;" data-id="5c8b72144a896b20f8d46805">天然干菜</a>
+                   </div>
+                   <ul class="product-desc">
+                   </ul>
+               </div>
+           </div>
+           <div class="food">
+               <div class="title">
+                   <h3 class="fl">休闲食品</h3>
+                   <span class="fr">更多&gt;</span>
+               </div>
+               <div class="desc-left fl">
+                   <h3>休闲食品</h3>
+                   <div class="desc-banner">
+                       <div class="bg"></div>
+                       <div class="small-banner">
+                           <a href="javascript:;">
+                               <p>逯源野生元蘑 野生</p>
+                               <img src="/home/images/specialty1.jpg" alt="">
+                           </a>
+                           <a href="javascript:;">
+                               <p> 野生干货东北特产 250g</p>
+                               <img src="/home/images/specialty2.jpg" alt="">
+                           </a>
+                           <a href="javascript:;">
+                               <p>元蘑菇东北山珍特产</p>
+                               <img src="/home/images/specialty3.jpg" alt="">
+                           </a>
+                       </div>
+                       <div class="subscript">
+                           <a href="javascript:;">&lt;</a>
+                           <span><em>3</em>/<i>3</i></span>
+                           <a href="javascript:;">&gt;</a>
+                       </div>
+                       <div class="dire">
+                           <input type="button" class="specialty-left" value="<">
+                           <input type="button" class="specialty-right" value=">">
+                       </div>
+                   </div>
+                   <div class="product-classify">
+                       <a href="javascript:;">清香型</a>
+                       <a href="javascript:;">白百合</a>
+                       <a href="javascript:;">香菇</a>
+                       <a href="javascript:;">木耳</a>
+                       <a href="javascript:;">腊肉</a>
+                       <a href="javascript:;">笋干</a>
+                   </div>
+               </div>
+               <div class="desc-right fl">
+                   <div class="title-list">
+                       <a href="javascript:;" class="active">特产推荐</a>
+                       <a href="javascript:;">地方特产</a>
+                       <a href="javascript:;">名品茶叶</a>
+                       <a href="javascript:;">天然干菜</a>
+                   </div>
+                   <ul class="product-desc">
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+           <div class="drink">
+               <div class="title">
+                   <h3 class="fl">乳品饮料</h3>
+                   <span class="fr">更多&gt;</span>
+               </div>
+               <div class="desc-left fl">
+                   <h3>乳品饮料</h3>
+                   <div class="desc-banner">
+                       <div class="bg"></div>
+                       <div class="small-banner">
+                           <a href="javascript:;">
+                               <p>逯源野生元蘑 野生</p>
+                               <img src="/home/images/specialty1.jpg" alt="">
+                           </a>
+                           <a href="javascript:;">
+                               <p> 野生干货东北特产 250g</p>
+                               <img src="/home/images/specialty2.jpg" alt="">
+                           </a>
+                           <a href="javascript:;">
+                               <p>元蘑菇东北山珍特产</p>
+                               <img src="/home/images/specialty3.jpg" alt="">
+                           </a>
+                       </div>
+                       <div class="subscript">
+                           <a href="javascript:;">&lt;</a>
+                           <span><em>3</em>/<i>3</i></span>
+                           <a href="javascript:;">&gt;</a>
+                       </div>
+                       <div class="dire">
+                           <input type="button" class="specialty-left" value="<">
+                           <input type="button" class="specialty-right" value=">">
+                       </div>
+                   </div>
+                   <div class="product-classify">
+                       <a href="javascript:;">清香型</a>
+                       <a href="javascript:;">白百合</a>
+                       <a href="javascript:;">香菇</a>
+                       <a href="javascript:;">木耳</a>
+                       <a href="javascript:;">腊肉</a>
+                       <a href="javascript:;">笋干</a>
+                   </div>
+               </div>
+               <div class="desc-right fl">
+                   <div class="title-list">
+                       <a href="javascript:;" class="active">特产推荐</a>
+                       <a href="javascript:;">地方特产</a>
+                       <a href="javascript:;">名品茶叶</a>
+                       <a href="javascript:;">天然干菜</a>
+                   </div>
+                   <ul class="product-desc">
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+           <div class="foodstuff">
+               <div class="title">
+                   <h3 class="fl">粮油调味</h3>
+                   <span class="fr">更多&gt;</span>
+               </div>
+               <div class="desc-left fl">
+                   <h3>粮油调味</h3>
+                   <div class="desc-banner">
+                       <div class="bg"></div>
+                       <div class="small-banner">
+                           <a href="javascript:;">
+                               <p>逯源野生元蘑 野生</p>
+                               <img src="/home/images/specialty1.jpg" alt="">
+                           </a>
+                           <a href="javascript:;">
+                               <p> 野生干货东北特产 250g</p>
+                               <img src="/home/images/specialty2.jpg" alt="">
+                           </a>
+                           <a href="javascript:;">
+                               <p>元蘑菇东北山珍特产</p>
+                               <img src="/home/images/specialty3.jpg" alt="">
+                           </a>
+                       </div>
+                       <div class="subscript">
+                           <a href="javascript:;">&lt;</a>
+                           <span><em>3</em>/<i>3</i></span>
+                           <a href="javascript:;">&gt;</a>
+                       </div>
+                       <div class="dire">
+                           <input type="button" class="specialty-left" value="<">
+                           <input type="button" class="specialty-right" value=">">
+                       </div>
+                   </div>
+                   <div class="product-classify">
+                       <a href="javascript:;">清香型</a>
+                       <a href="javascript:;">白百合</a>
+                       <a href="javascript:;">香菇</a>
+                       <a href="javascript:;">木耳</a>
+                       <a href="javascript:;">腊肉</a>
+                       <a href="javascript:;">笋干</a>
+                   </div>
+               </div>
+               <div class="desc-right fl">
+                   <div class="title-list">
+                       <a href="javascript:;" class="active">特产推荐</a>
+                       <a href="javascript:;">地方特产</a>
+                       <a href="javascript:;">名品茶叶</a>
+                       <a href="javascript:;">天然干菜</a>
+                   </div>
+                   <ul class="product-desc">
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+           <div class="vegetabes">
+               <div class="title">
+                   <h3 class="fl">生鲜果蔬</h3>
+                   <span class="fr">更多&gt;</span>
+               </div>
+               <div class="desc-left fl">
+                   <h3>生鲜果蔬</h3>
+                   <div class="desc-banner">
+                       <div class="bg"></div>
+                       <div class="small-banner">
+                           <a href="javascript:;">
+                               <p>逯源野生元蘑 野生</p>
+                               <img src="/home/images/specialty1.jpg" alt="">
+                           </a>
+                           <a href="javascript:;">
+                               <p> 野生干货东北特产 250g</p>
+                               <img src="/home/images/specialty2.jpg" alt="">
+                           </a>
+                           <a href="javascript:;">
+                               <p>元蘑菇东北山珍特产</p>
+                               <img src="/home/images/specialty3.jpg" alt="">
+                           </a>
+                       </div>
+                       <div class="subscript">
+                           <a href="javascript:;">&lt;</a>
+                           <span><em>3</em>/<i>3</i></span>
+                           <a href="javascript:;">&gt;</a>
+                       </div>
+                       <div class="dire">
+                           <input type="button" class="specialty-left" value="<">
+                           <input type="button" class="specialty-right" value=">">
+                       </div>
+                   </div>
+                   <div class="product-classify">
+                       <a href="javascript:;">清香型</a>
+                       <a href="javascript:;">白百合</a>
+                       <a href="javascript:;">香菇</a>
+                       <a href="javascript:;">木耳</a>
+                       <a href="javascript:;">腊肉</a>
+                       <a href="javascript:;">笋干</a>
+                   </div>
+               </div>
+               <div class="desc-right fl">
+                   <div class="title-list">
+                       <a href="javascript:;" class="active">特产推荐</a>
+                       <a href="javascript:;">地方特产</a>
+                       <a href="javascript:;">名品茶叶</a>
+                       <a href="javascript:;">天然干菜</a>
+                   </div>
+                   <ul class="product-desc">
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+           <div class="alcohol">
+               <div class="title">
+                   <h3 class="fl">茗茶名酒</h3>
+                   <span class="fr">更多&gt;</span>
+               </div>
+               <div class="desc-left fl">
+                   <h3>茗茶名酒</h3>
+                   <div class="desc-banner">
+                       <div class="bg"></div>
+                       <div class="small-banner">
+                           <a href="javascript:;">
+                               <p>逯源野生元蘑 野生</p>
+                               <img src="/home/images/specialty1.jpg" alt="">
+                           </a>
+                           <a href="javascript:;">
+                               <p> 野生干货东北特产 250g</p>
+                               <img src="/home/images/specialty2.jpg" alt="">
+                           </a>
+                           <a href="javascript:;">
+                               <p>元蘑菇东北山珍特产</p>
+                               <img src="/home/images/specialty3.jpg" alt="">
+                           </a>
+                       </div>
+                       <div class="subscript">
+                           <a href="javascript:;">&lt;</a>
+                           <span><em>3</em>/<i>3</i></span>
+                           <a href="javascript:;">&gt;</a>
+                       </div>
+                       <div class="dire">
+                           <input type="button" class="specialty-left" value="<">
+                           <input type="button" class="specialty-right" value=">">
+                       </div>
+                   </div>
+                   <div class="product-classify">
+                       <a href="javascript:;">清香型</a>
+                       <a href="javascript:;">白百合</a>
+                       <a href="javascript:;">香菇</a>
+                       <a href="javascript:;">木耳</a>
+                       <a href="javascript:;">腊肉</a>
+                       <a href="javascript:;">笋干</a>
+                   </div>
+               </div>
+               <div class="desc-right fl">
+                   <div class="title-list">
+                       <a href="javascript:;" class="active">特产推荐</a>
+                       <a href="javascript:;">地方特产</a>
+                       <a href="javascript:;">名品茶叶</a>
+                       <a href="javascript:;">天然干菜</a>
+                   </div>
+                   <ul class="product-desc">
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+           <div class="nutr">
+               <div class="title">
+                   <h3 class="fl">滋补营养</h3>
+                   <span class="fr">更多&gt;</span>
+               </div>
+               <div class="desc-left fl">
+                   <h3>滋补营养</h3>
+                   <div class="desc-banner">
+                       <div class="bg"></div>
+                       <div class="small-banner">
+                           <a href="javascript:;">
+                               <p>逯源野生元蘑 野生</p>
+                               <img src="/home/images/specialty1.jpg" alt="">
+                           </a>
+                           <a href="javascript:;">
+                               <p> 野生干货东北特产 250g</p>
+                               <img src="/home/images/specialty2.jpg" alt="">
+                           </a>
+                           <a href="javascript:;">
+                               <p>元蘑菇东北山珍特产</p>
+                               <img src="/home/images/specialty3.jpg" alt="">
+                           </a>
+                       </div>
+                       <div class="subscript">
+                           <a href="javascript:;">&lt;</a>
+                           <span><em>3</em>/<i>3</i></span>
+                           <a href="javascript:;">&gt;</a>
+                       </div>
+                       <div class="dire">
+                           <input type="button" class="specialty-left" value="<">
+                           <input type="button" class="specialty-right" value=">">
+                       </div>
+                   </div>
+                   <div class="product-classify">
+                       <a href="javascript:;">清香型</a>
+                       <a href="javascript:;">白百合</a>
+                       <a href="javascript:;">香菇</a>
+                       <a href="javascript:;">木耳</a>
+                       <a href="javascript:;">腊肉</a>
+                       <a href="javascript:;">笋干</a>
+                   </div>
+               </div>
+               <div class="desc-right fl">
+                   <div class="title-list">
+                       <a href="javascript:;" class="active">特产推荐</a>
+                       <a href="javascript:;">地方特产</a>
+                       <a href="javascript:;">名品茶叶</a>
+                       <a href="javascript:;">天然干菜</a>
+                   </div>
+                   <ul class="product-desc">
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="specialty-detials valign">
+                               <a href="javascript:;">
+                                   <img src="/home/images/tc1.jpg" alt="">
+                                   <p>康芝宝 天麻（一级优质无硫磺）金寨特产 野生天麻 山珍佳品 250g/袋</p>
+                                   <div class="add-cart">
+                                       <span>￥79.00</span>
+                                       <s>￥79.00</s>
+                                       <a class="cart" href="javascript:;">
+
+                                       </a>
+                                   </div>
+                               </a>
+                           </div>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+           <div class="floor">
+               <ul>
+                   <li data-id ="1">地方特产</li>
+                   <li data-id ="2">休闲食品</li>
+                   <li data-id ="3">乳品饮料</li>
+                   <li data-id ="4">粮油调味</li>
+                   <li data-id ="5">生鲜果蔬</li>
+                   <li data-id ="6">茗茶名酒</li>
+                   <li data-id ="7">滋补营养</li>
+                   <li class="return-top">
+                       <i></i>
+                       <span>顶部</span>
+                   </li>
+               </ul>
+           </div>
+       </div>
+   </div>
+  <div class="footer">
+    <div id="footer">
+    <div class="layout">
+        <div class="web-map">
+            <dl>
+                <dt>友情链接</dt>
+                <dd><a href="javascript:;">蜂乐社区</a></dd>
+                <dd><a href="javascript:;">sem</a></dd>
+                <dd><a href="javascript:;">眼保仪</a></dd>
+                <dd><a href="javascript:;">公司官网</a></dd>
+            </dl>
+            <dl>
+                <dt>新手入门</dt>
+                <dd><a href="javascript:;">注册登陆</a></dd>
+                <dd><a href="javascript:;">购买指南</a></dd>
+                <dd><a href="javascript:;">商家入驻</a></dd>
+                <dd><a href="javascript:;">资费标准</a></dd>
+            </dl>
+            <dl>
+                <dt>友情链接</dt>
+                <dd><a href="javascript:;">蜂乐社区</a></dd>
+                <dd><a href="javascript:;">sem</a></dd>
+                <dd><a href="javascript:;">眼保仪</a></dd>
+                <dd><a href="javascript:;">公司官网</a></dd>
+            </dl>
+            <dl>
+                <dt>新手入门</dt>
+                <dd><a href="javascript:;">注册登陆</a></dd>
+                <dd><a href="javascript:;">购买指南</a></dd>
+                <dd><a href="javascript:;">商家入驻</a></dd>
+                <dd><a href="javascript:;">资费标准</a></dd>
+            </dl>
+            <dl>
+                <dt>友情链接</dt>
+                <dd><a href="javascript:;">蜂乐社区</a></dd>
+                <dd><a href="javascript:;">sem</a></dd>
+                <dd><a href="javascript:;">眼保仪</a></dd>
+                <dd><a href="javascript:;">公司官网</a></dd>
+            </dl>
+            <dl>
+                <dt>新手入门</dt>
+                <dd><a href="javascript:;">注册登陆</a></dd>
+                <dd><a href="javascript:;">购买指南</a></dd>
+                <dd><a href="javascript:;">商家入驻</a></dd>
+                <dd><a href="javascript:;">资费标准</a></dd>
+            </dl>
+        </div>
+        <div class="self-info">
+            <p>
+                <a href="javascript:;">商城首页</a><span>|</span>
+                <a href="javascript:;">商家中心</a><span>|</span>
+                <a href="javascript:;">帮助中心</a><span>|</span>
+                <a href="javascript:;">关于我们</a><span>|</span>
+                <a href="javascript:;">联系我们</a>
+            </p>
+            <p>ICP备案号:皖B2-20140064-1 | 食品经营许可证:JY13415030011883</p>
+            <p>地址:安徽省六安市裕安区平桥工业园蜂狂购电商产业园</p>
+            <p>2014-2018 蜂狂购 Fkgou.com 版权所有</p>
+        </div>
+    </div>
+   <script src="/home/js/jquery.js"></script>
+   <script src="/home/js/public.js"></script>
+   <script src="/home/js/index.js"></script>
+   <script>
+       new SmallBanner($(".specialty"));
+       new SmallBanner($(".food"));
+       new SmallBanner($(".foodstuff"));
+       new SmallBanner($(".drink"));
+       new SmallBanner($(".vegetabes"));
+       new SmallBanner($(".alcohol"));
+       new SmallBanner($(".nutr"));
+
+   </script>
+</body>
+</html>
